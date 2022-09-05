@@ -1,0 +1,11 @@
+.bouncingball {
+  width:140px;
+  height:140px;
+  border-radius:100%;
+  background:#CCC;
+  animation: bounce 1s;
+  transform: translateY(0px);
+  animation-iteration-count: infinite;
+  position:absolute;
+  margin:50px;
+}

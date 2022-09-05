@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import './app/styles/variables.styles';
+@import './app/styles/animations.styles';
+@import './app/styles/helpers.styles';
+
+html, body{
+  width: 100%;
+  height: 100%;
+  font-family: 'Sans', sans-serif;
+}
+html{
+  background-image: url('./assets/wallpaper.jpg');
+  background-size: 100%;
+  background-size: cover;
+}
+body{
+  backdrop-filter: blur(100px);
+  margin: 0px;
+  float: left;
+}
+app-root{
+  height: 100%;
+  display: block;
+}
+app-psignin,
+app-tsignin,
+app-tcontentlogin,
+app-token,
+app-ttoken,
+app-home
+{
+  height: inherit;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0px;
+  padding: 0px;
+}
+
+.icon{
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+
+}
+
+app-taside{
+  z-index: 9999;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  backdrop-filter: blur(2px);
+}
+app-tcontent {
+  background-color: $background-color2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  padding-top: 60px;
+}

@@ -1,0 +1,6 @@
+<div class="cardssections">
+  <section *ngFor="let section of sections">
+    <h2>{{section.title}}</h2>
+    <app-ocards [cards]="section.cards"></app-ocards>
+  </section>
+</div>
